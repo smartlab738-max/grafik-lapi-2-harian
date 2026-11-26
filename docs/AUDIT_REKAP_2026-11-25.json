@@ -1,0 +1,21 @@
+{
+  "tanggalVerifikasi": "2026-11-25",
+  "sourceExcel": "sources/Rekap_Laporan_Mingguan_Listrik_asli.xlsx",
+  "sourceDashboard": "Grafik Lapi 2 versi 25 November 2026",
+  "jumlahSheet": 17,
+  "panelTeridentifikasi": 15,
+  "kelompokTanggalPanelDariExcel": 4316,
+  "nilaiNumerikExcelYangCocok": 66053,
+  "nilaiNumerikExcelBelumAdaDiJSON": 0,
+  "nilaiNumerikExcelBerbedaDenganJSON": 380,
+  "selNonNumerikDiExcel": 778,
+  "blokTanggalTidakDikenaliPembaca": 86,
+  "databasePanel": 15,
+  "databaseTanggal": 333,
+  "databaseTanggalPanel": 4600,
+  "databasePembacaan": 72366,
+  "databaseArsipMingguan": 220,
+  "kebijakanKonflik": "Pertahankan nilai JSON lama; jangan timpa 380 sel berbeda secara diam-diam. Gunakan AUDIT-380-SEL-BERBEDA.csv",
+  "bmsDipeliharaTerpisah": true,
+  "backendLiveDitest": false
+}
