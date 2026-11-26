@@ -1,0 +1,23 @@
+/* Drill-down native engineering dashboard; inherits dark/light palette */
+.drill-view{scroll-margin-top:20px}
+.drill-hero{padding:23px 25px;background:linear-gradient(115deg,#122f50,#244e86);border:0;color:#fff}
+.drill-hero h2{font-size:22px;color:#fff;margin:0}.drill-hero p{font-size:12px;color:#dbebff;margin:6px 0 0}
+.drill-caption{font-size:11px;color:#cce1fa;letter-spacing:.04em;font-weight:800;margin-bottom:8px}
+.drill-crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 0}.drill-crumbs button{padding:9px 13px;border-radius:9px;border:1px solid #7097bc;background:#244e79;color:#e7f0ff;cursor:pointer;font-weight:700;font-size:12px}.drill-crumbs button.active{background:white;color:#174476}.drill-crumbs button:disabled{opacity:.45;cursor:not-allowed}.drill-crumbs span{color:#b6cee8}
+.drill-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:16px 0}
+.drill-stats .engineer-kpi{margin:0;min-width:0}
+.drill-section{background:var(--card,#fff);border:1px solid var(--line,#e0e7ef);padding:21px;border-radius:17px;margin-top:16px}
+.drill-section-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap}
+.drill-section h3{font-size:16px;color:var(--ink,#213547);margin:0}
+.drill-section small{display:block;font-size:11px;color:var(--muted,#60738e);margin-top:6px}
+.drill-select{padding:8px 10px;border:1px solid #cfdbed;border-radius:9px;background:#fff;color:#253b5b;min-height:36px}
+.drill-editgrid{display:grid;grid-template-columns:1.4fr 1.5fr 1fr 1fr;gap:9px;margin-top:15px}.drill-editgrid label{display:block;font-size:11px;font-weight:750;color:var(--muted,#60738e);margin-bottom:4px}.drill-editgrid input{width:100%;min-width:0;padding:8px 9px;border:1px solid #d5e1ed;border-radius:9px;background:var(--card,#fff);color:var(--ink,#26384d)}
+.drill-svg-container{width:100%;overflow-x:auto;margin-top:15px;padding:5px 3px 0;background:#fff;border:1px solid #e3eaf3;border-radius:13px}
+.drill-svg-container svg{display:block;min-width:760px;width:100%;height:auto}
+.drill-svg-item:hover rect:first-of-type,.drill-svg-item:focus rect:first-of-type{filter:brightness(.85);stroke:#143b65;stroke-width:2}
+.drill-table{max-height:410px;overflow:auto;margin-top:14px;border-radius:12px;border:1px solid #e1e9f4}.drill-table table{width:100%}.drill-table tr.drill-warning td{background:#fff9ef}.drill-table tbody tr:hover td{background:#f2f7fc}
+.drill-level-note{font-size:12px;font-weight:650;color:#24538c;background:#eef5ff;border:1px solid #d5e6fe;border-radius:10px;padding:11px 13px;margin-top:13px}
+.drill-method{font-size:11px;line-height:1.7;color:var(--muted,#60738e);margin-top:12px}
+.drill-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:13px;align-items:center}
+@media(max-width:970px){.drill-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.drill-editgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.drill-hero{padding:18px}.drill-section{padding:14px}.drill-stats{grid-template-columns:1fr 1fr;gap:8px}.drill-editgrid{grid-template-columns:1fr}.drill-hero h2{font-size:18px}.drill-crumbs button{font-size:11px;padding:8px 10px}}

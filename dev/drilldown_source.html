@@ -1,0 +1,24 @@
+<div id="drillView" class="drill-view hidden eng-view">
+ <section class="card drill-hero">
+  <div class="drill-caption">ENGINEERING / ENERGY INTELLIGENCE · INTERACTIVE DRILLDOWN</div>
+  <h2>Analisis Konsumsi Bulanan → Harian → Per Jam</h2>
+  <p>Klik bulan yang naik, telusuri hari penyebabnya, lalu periksa jam dan pembacaan meter asli. Tidak ada imputasi jam kosong.</p>
+  <div id="drillBreadcrumb" class="drill-crumbs"></div>
+ </section>
+ <div class="drill-stats" id="drillStats"></div>
+ <section class="drill-section">
+  <div class="drill-section-head">
+   <div><h3>Grafik interaktif · <span id="drillPanel"></span></h3><small>Tahun <span id="drillYear"></span> · klik batang untuk rincian · sumbu Y dalam kWh, sumbu X berupa periode waktu</small></div>
+   <div class="actions"><select id="drillFormat" class="drill-select" aria-label="Format unduhan"><option value="png">PNG resolusi tinggi</option><option value="jpg">JPG resolusi tinggi</option><option value="svg">SVG vektor</option><option value="pdf">PDF siap laporan</option><option value="csv">CSV data grafik</option><option value="xlsx">Excel data grafik</option></select><button type="button" class="btn blue" id="drillExport">↓ Unduh grafik / rekap</button></div>
+  </div>
+  <div class="drill-editgrid"><div><label for="drillTitle">Judul grafik</label><input id="drillTitle" maxlength="160"/></div><div><label for="drillSubtitle">Subjudul grafik</label><input id="drillSubtitle" maxlength="140"/></div><div><label for="drillX">Label sumbu X</label><input id="drillX" maxlength="120"/></div><div><label for="drillY">Label sumbu Y</label><input id="drillY" maxlength="120"/></div></div>
+  <div id="drillChart" class="drill-svg-container" aria-live="polite"></div>
+  <div id="drillLevelNote" class="drill-level-note"></div>
+  <div class="drill-foot"><span class="drill-method" id="drillQuality"></span><button type="button" class="btn sm" id="drillReset">↺ Reset judul / sumbu</button></div>
+ </section>
+ <section class="drill-section">
+  <div class="drill-section-head"><div><h3>Rekap monitoring dan validasi pembacaan</h3><small>Seluruh data tetap berasal dari stand meter Excel / database. Tanda peringatan harus ditinjau oleh Engineering.</small></div><div class="actions"><button type="button" class="btn" id="drillImport">↑ Import Excel</button><button type="button" class="btn blue" id="drillSave">↥ Simpan ke GitHub</button></div></div>
+  <div class="drill-table"><table><thead id="drillTableHead"></thead><tbody id="drillTableBody"></tbody></table></div>
+  <p class="drill-method"><b>Rumus:</b> Energi interval (kWh) = (Stand meter akhir − awal) × faktor satuan, hanya untuk dua pembacaan yang berjarak tepat 1 jam dan dapat dibandingkan. Data reset/penurunan meter tidak otomatis dianggap konsumsi negatif. Total bulanan dan harian merupakan jumlah interval yang berhasil diobservasi, bukan proyeksi untuk interval kosong. Koreksi total harian manual dipertahankan sebagai koreksi dan tidak dipecah secara fiktif ke per jam.</p>
+ </section>
+</div>

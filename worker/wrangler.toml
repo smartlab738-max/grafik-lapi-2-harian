@@ -1,0 +1,7 @@
+name = "lapi-listrik-save"
+main = "worker.js"
+compatibility_date = "2026-11-25"
+workers_dev = true
+
+# Tambahkan GITHUB_TOKEN, EDITOR_PASSWORD, SESSION_SECRET via Cloudflare secret,
+# JANGAN menuliskan nilainya di sini atau commit ke GitHub.
